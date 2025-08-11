@@ -1,10 +1,11 @@
 <p align="center"> <img src="https://media.giphy.com/media/L8K62iTDkzGX6/giphy.gif" width="100%" alt="Glowing Cyberpunk Web-Crawler Banner"> </p>
 
-██     ██ ███████ ██████      ██████ ██████   █████  ██     ██ ██      ███████ ██████  
-██     ██ ██      ██   ██     ██      ██   ██ ██   ██ ██     ██ ██      ██      ██   ██ 
-██  █  ██ █████   ██████      ██      ██████  ███████ ██  █  ██ ██      █████   ██████  
-██ ███ ██ ██      ██   ██     ██      ██   ██ ██   ██ ██ ███ ██ ██      ██      ██   ██ 
- ███ ███  ███████ ██   ██      ██████ ██   ██ ██   ██  ███ ███  ███████ ███████ ██   ██
+_________ __________    _____   __      __ .____     _____________________ 
+\_   ___ \\______   \  /  _  \ /  \    /  \|    |    \_   _____/\______   \
+/    \  \/ |       _/ /  /_\  \\   \/\/   /|    |     |    __)_  |       _/
+\     \____|    |   \/    |    \\        / |    |___  |        \ |    |   \
+ \______  /|____|_  /\____|__  / \__/\  /  |_______ \/_______  / |____|_  /
+        \/        \/         \/       \/           \/        \/         \/ 
 
 <h1 align="center">💀 Enhanced CTF WEB-CRAWLER Bot v4.3 👽⚡</h1> <h3 align="center">Commander-Grade Recon & Exploitation Engine — Crawl, Hunt, Smash.</h3> <p align="center"> <img src="https://img.shields.io/badge/Blackhat%20Mode-ENABLED-ff0000?style=for-the-badge&logo=probot&logoColor=white"> <img src="https://img.shields.io/badge/Version-4.3-brightgreen?style=for-the-badge"> <img src="https://img.shields.io/badge/Commander-READY-blueviolet?style=for-the-badge"> <img src="https://img.shields.io/badge/License-MIT-orange?style=for-the-badge"> </p>
 🚀 Arsenal Features
