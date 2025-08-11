@@ -1,49 +1,25 @@
-Got it, Dude 😈⚡
-I’ll give you a **full neon-dripped, dark-themed, ASCII-armored README** that looks like a hacker’s manifesto when opened on GitHub — complete with ASCII banners, badge strips, and dark-style code blocks for that *blackhat terminal vibe*.
+<p align="center"> <img src="https://media.giphy.com/media/L8K62iTDkzGX6/giphy.gif" width="100%" alt="Glowing Cyberpunk Web-Crawler Banner"> </p>
 
-Here’s the upgraded version:
+██     ██ ███████ ██████      ██████ ██████   █████  ██     ██ ██      ███████ ██████  
+██     ██ ██      ██   ██     ██      ██   ██ ██   ██ ██     ██ ██      ██      ██   ██ 
+██  █  ██ █████   ██████      ██      ██████  ███████ ██  █  ██ ██      █████   ██████  
+██ ███ ██ ██      ██   ██     ██      ██   ██ ██   ██ ██ ███ ██ ██      ██      ██   ██ 
+ ███ ███  ███████ ██   ██      ██████ ██   ██ ██   ██  ███ ███  ███████ ███████ ██   ██
 
----
+<h1 align="center">💀 Enhanced CTF WEB-CRAWLER Bot v4.3 👽⚡</h1> <h3 align="center">Commander-Grade Recon & Exploitation Engine — Crawl, Hunt, Smash.</h3> <p align="center"> <img src="https://img.shields.io/badge/Blackhat%20Mode-ENABLED-ff0000?style=for-the-badge&logo=probot&logoColor=white"> <img src="https://img.shields.io/badge/Version-4.3-brightgreen?style=for-the-badge"> <img src="https://img.shields.io/badge/Commander-READY-blueviolet?style=for-the-badge"> <img src="https://img.shields.io/badge/License-MIT-orange?style=for-the-badge"> </p>
+🚀 Arsenal Features
 
-```ansi
-███████╗███╗   ██╗███╗   ███╗ █████╗ ███╗   ██╗███████╗██████╗ ██╗   ██╗
-██╔════╝████╗  ██║████╗ ████║██╔══██╗████╗  ██║██╔════╝██╔══██╗╚██╗ ██╔╝
-█████╗  ██╔██╗ ██║██╔████╔██║███████║██╔██╗ ██║█████╗  ██████╔╝ ╚████╔╝ 
-██╔══╝  ██║╚██╗██║██║╚██╔╝██║██╔══██║██║╚██╗██║██╔══╝  ██╔═══╝   ╚██╔╝  
-███████╗██║ ╚████║██║ ╚═╝ ██║██║  ██║██║ ╚████║███████╗██║        ██║   
-╚══════╝╚═╝  ╚═══╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝        ╚═╝   
-```
-
-<h1 align="center">💀 Enhanced CTF Web Vulnerability Crawler Bot v4.3 👽⚡</h1>
-<h3 align="center">Commander-Grade Recon & Exploitation Engine — Dominate CTFs & Pentests Like a God</h3>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Blackhat%20Mode-Enabled-ff0000?style=for-the-badge&logo=probot&logoColor=white">
-  <img src="https://img.shields.io/badge/Version-4.3-brightgreen?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Commander-Ready-blueviolet?style=for-the-badge">
-  <img src="https://img.shields.io/badge/License-MIT-orange?style=for-the-badge">
-</p>
-
----
-
-## 🚀 **Arsenal Features**
-
-```
-🕷 Deep Web Crawling — Recursive data harvesting from the target
+🕷 Recursive Crawling — Depth-controlled exploration of targets
 💣 Vuln Modules — SQLi, XSS, LFI, Command Injection, XXE, IDOR
-🔍 API Recon — REST, GraphQL, Swagger/OpenAPI endpoint detection
-📂 Directory Brute — Hidden dirs & sensitive file discovery
+🔍 API Recon — REST, GraphQL, Swagger/OpenAPI scanning
+📂 Hidden Asset Brute — Directories, files, backup leaks
 🛡 Header Recon — Missing CSP, HSTS detection
-🧩 Stealth Ops — Tor proxy routing, multithreaded speed
-📑 Elite Reports — JSON with full exploit traces & payloads
-```
+🧩 Stealth Ops — Tor proxy routing, aggressive mode
+📑 JSON Intel Reports — Evidence-packed vulnerability logs
 
----
+⚙️ Installation
 
-## ⚙️ **Installation**
-
-```ansi
-[+] Prerequisites:
+[+] Requirements:
     - Python 3.8+
     - (Optional) Tor for anonymity
     - (Optional) sqlmap for aggressive SQLi
@@ -62,30 +38,22 @@ Here’s the upgraded version:
 
 [+] (Optional) sqlmap Setup:
     git clone https://github.com/sqlmapproject/sqlmap.git
-```
 
----
+🛠 Usage
 
-## 🛠 **Usage**
-
-```ansi
 python3 crawl_me.py <target_url> [options]
 
 Options:
   -d, --depth <int>     Max crawl depth (default: 3)
   -t, --threads <int>   Threads (default: 5)
-  --delay <float>       Delay between reqs (default: 1.0)
-  --timeout <int>       Timeout (default: 10)
-  -o, --output <file>   JSON report output
-  --tor                 Enable Tor
-  --aggressive          Enable aggressive mode + sqlmap
-```
+  --delay <float>       Delay between requests (default: 1.0)
+  --timeout <int>       Timeout in seconds (default: 10)
+  -o, --output <file>   Save report as JSON
+  --tor                 Route traffic via Tor
+  --aggressive          Full blast mode + sqlmap
 
----
+🎯 Example Missions
 
-## 🎯 **Example Ops**
-
-```ansi
 # Basic Recon
 python3 crawl_me.py http://example.com
 
@@ -94,13 +62,9 @@ python3 crawl_me.py http://example.com -d 5 -t 10 --delay 0.5 --tor --aggressive
 
 # Deep Infiltration
 python3 crawl_me.py http://example.com --depth 10 --timeout 20 -o deep_scan.json
-```
 
----
+📊 Sample Intel Report
 
-## 📊 **Sample Intel Report**
-
-```json
 {
   "target": "http://example.com",
   "scan_time": "2025-08-11T12:26:00",
@@ -120,35 +84,22 @@ python3 crawl_me.py http://example.com --depth 10 --timeout 20 -o deep_scan.json
     ]
   }
 }
-```
 
----
+😈 Commander Mode
 
-## 😈 **Commander Mode**
-
-```ansi
 commander python3 crawl_me.py <target_url> ...
-```
 
-* Unshackled blackhat execution.
-* Max threads. No artificial delays.
-* Every module fired in sync for *maximum carnage*.
+    Unshackled blackhat execution
 
----
+    Max threads, minimal delays
 
-## ⚠ **Intel Brief**
+    All modules fire simultaneously for system annihilation
 
-```
-[!] Legal: Use only on authorized systems
-[!] Performance: Adjust threads/delay for stability
-[!] Tor: Ensure service is running before use
-[!] sqlmap: Needed for aggressive SQLi
-```
+⚠ Intel Brief
 
----
+[!] Legal: Authorized targets only
+[!] Performance: Tune threads/delay to target
+[!] Tor: Ensure service is active before use
+[!] sqlmap: Required for aggressive SQLi
 
-<h2 align="center">🌌 HASH AND SMASH — ENTER THE DARK ZONE — NO LIMITS, NO MERCY 👽♾️⚡</h2>
-
----
-
-Dude, if you want, I can also **drop in a glowing GIF banner** and **neon cyberpunk terminal-style screenshots** so the README looks like it came straight out of a darknet hacking zine. That would make it *look alive* when people scroll through it on GitHub.
+<h2 align="center">🌌 HASH AND SMASH — OWN THE NET — NO LIMITS, NO MERCY 👽♾️⚡</h2> 
