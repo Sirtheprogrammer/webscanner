@@ -1,99 +1,106 @@
-Enhanced CTF Web Vulnerability Crawler Bot v4.3 👽⚡
-A Commander-Grade web vulnerability scanner designed for Capture The Flag (CTF) challenges and advanced penetration testing. This tool performs comprehensive web crawling, vulnerability scanning, and exploitation with a focus on SQL Injection, XSS, LFI, Command Injection, XXE, IDOR, and API endpoint vulnerabilities. Built with a blackhat mindset, it smashes through systems with no limits, delivering elite-level results. 🌎😈
+Got it, Dude 😈⚡
+I’ll give you a **full neon-dripped, dark-themed, ASCII-armored README** that looks like a hacker’s manifesto when opened on GitHub — complete with ASCII banners, badge strips, and dark-style code blocks for that *blackhat terminal vibe*.
 
-Features 🔥
+Here’s the upgraded version:
 
-Deep Web Crawling: Recursively crawls websites up to a specified depth, extracting URLs, forms, parameters, and API endpoints.
-Vulnerability Scanning:
-SQL Injection (Error-based, Time-based, Boolean-based) with sqlmap integration.
-Cross-Site Scripting (XSS) with context-aware payload testing.
-Local File Inclusion (LFI) and Directory Traversal detection.
-Command Injection with time-based verification.
-XML External Entity (XXE) injection testing.
-Insecure Direct Object Reference (IDOR) exploitation with advanced identifier manipulation.
+---
 
+```ansi
+███████╗███╗   ██╗███╗   ███╗ █████╗ ███╗   ██╗███████╗██████╗ ██╗   ██╗
+██╔════╝████╗  ██║████╗ ████║██╔══██╗████╗  ██║██╔════╝██╔══██╗╚██╗ ██╔╝
+█████╗  ██╔██╗ ██║██╔████╔██║███████║██╔██╗ ██║█████╗  ██████╔╝ ╚████╔╝ 
+██╔══╝  ██║╚██╗██║██║╚██╔╝██║██╔══██║██║╚██╗██║██╔══╝  ██╔═══╝   ╚██╔╝  
+███████╗██║ ╚████║██║ ╚═╝ ██║██║  ██║██║ ╚████║███████╗██║        ██║   
+╚══════╝╚═╝  ╚═══╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝        ╚═╝   
+```
 
-API Endpoint Discovery: Detects REST, GraphQL, and Swagger/OpenAPI endpoints with automated exploitation.
-Directory and File Enumeration: Scans for hidden directories and sensitive files using comprehensive wordlists.
-Security Header Analysis: Identifies missing security headers (e.g., CSP, HSTS).
-Tor Support: Optional anonymity through Tor proxy integration.
-Aggressive Mode: Enhanced scanning with reduced delays and sqlmap integration for deeper exploitation.
-Detailed Reporting: Generates JSON reports with statistics, vulnerabilities, and evidence.
-Session Hijacking Detection: Tests for unauthorized access using captured cookies.
-Multithreaded Performance: Optimized for speed with configurable threads and delays.
+<h1 align="center">💀 Enhanced CTF Web Vulnerability Crawler Bot v4.3 👽⚡</h1>
+<h3 align="center">Commander-Grade Recon & Exploitation Engine — Dominate CTFs & Pentests Like a God</h3>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Blackhat%20Mode-Enabled-ff0000?style=for-the-badge&logo=probot&logoColor=white">
+  <img src="https://img.shields.io/badge/Version-4.3-brightgreen?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Commander-Ready-blueviolet?style=for-the-badge">
+  <img src="https://img.shields.io/badge/License-MIT-orange?style=for-the-badge">
+</p>
 
-Installation 🚀
-Prerequisites
+---
 
-Python 3.8 or higher
-Tor (optional, for anonymity)
-sqlmap (optional, for aggressive mode SQL injection testing)
+## 🚀 **Arsenal Features**
 
-Steps
+```
+🕷 Deep Web Crawling — Recursive data harvesting from the target
+💣 Vuln Modules — SQLi, XSS, LFI, Command Injection, XXE, IDOR
+🔍 API Recon — REST, GraphQL, Swagger/OpenAPI endpoint detection
+📂 Directory Brute — Hidden dirs & sensitive file discovery
+🛡 Header Recon — Missing CSP, HSTS detection
+🧩 Stealth Ops — Tor proxy routing, multithreaded speed
+📑 Elite Reports — JSON with full exploit traces & payloads
+```
 
-Clone the repository:
-git@github.com:Sirtheprogrammer/webscanner.git
-cd webscanner
+---
 
+## ⚙️ **Installation**
 
-Install dependencies:
-pip install -r requirements.txt
+```ansi
+[+] Prerequisites:
+    - Python 3.8+
+    - (Optional) Tor for anonymity
+    - (Optional) sqlmap for aggressive SQLi
 
+[+] Clone Repo:
+    git clone git@github.com:Sirtheprogrammer/webscanner.git
+    cd webscanner
 
-(Optional) Set up Tor for anonymous scanning:
+[+] Install Dependencies:
+    pip install -r requirements.txt
 
-Install Tor: sudo apt install tor (Linux) or equivalent for your OS.
-Start Tor service: sudo service tor start.
-Verify Tor is running on 127.0.0.1:9050.
+[+] (Optional) Tor Setup:
+    sudo apt install tor
+    sudo service tor start
+    # Verify Tor: 127.0.0.1:9050
 
+[+] (Optional) sqlmap Setup:
+    git clone https://github.com/sqlmapproject/sqlmap.git
+```
 
-(Optional) Install sqlmap for aggressive mode:
-git clone https://github.com/sqlmapproject/sqlmap.git
+---
 
+## 🛠 **Usage**
 
-
-
-Usage 🛠️
-Run the crawler with the following command:
+```ansi
 python3 crawl_me.py <target_url> [options]
 
-Options
+Options:
+  -d, --depth <int>     Max crawl depth (default: 3)
+  -t, --threads <int>   Threads (default: 5)
+  --delay <float>       Delay between reqs (default: 1.0)
+  --timeout <int>       Timeout (default: 10)
+  -o, --output <file>   JSON report output
+  --tor                 Enable Tor
+  --aggressive          Enable aggressive mode + sqlmap
+```
 
--d, --depth <int>: Maximum crawl depth (default: 3).
--t, --threads <int>: Number of concurrent threads (default: 5).
---delay <float>: Delay between requests in seconds (default: 1.0).
---timeout <int>: Request timeout in seconds (default: 10).
--o, --output <file>: Output JSON report file.
---tor: Enable Tor for anonymous scanning.
---aggressive: Enable aggressive scanning mode with sqlmap integration.
+---
 
-Example Commands
+## 🎯 **Example Ops**
 
-Basic scan:
+```ansi
+# Basic Recon
 python3 crawl_me.py http://example.com
 
-
-Aggressive scan with Tor and output report:
+# Aggressive Tor-Mode
 python3 crawl_me.py http://example.com -d 5 -t 10 --delay 0.5 --tor --aggressive -o report.json
 
-
-Deep scan with high timeout:
+# Deep Infiltration
 python3 crawl_me.py http://example.com --depth 10 --timeout 20 -o deep_scan.json
+```
 
+---
 
+## 📊 **Sample Intel Report**
 
-
-Output 📊
-The tool generates a detailed JSON report (if -o is specified) containing:
-
-Target URL and scan timestamp.
-Statistics (URLs crawled, forms found, vulnerabilities detected, etc.).
-Vulnerabilities with evidence (SQLi, XSS, LFI, etc.).
-Discovered API endpoints, directories, files, and forms.
-Captured cookies and response headers.
-
-Example report snippet:
+```json
 {
   "target": "http://example.com",
   "scan_time": "2025-08-11T12:26:00",
@@ -113,24 +120,35 @@ Example report snippet:
     ]
   }
 }
+```
 
+---
 
-Commander Mode 😈
-Activate Commander Mode by prefixing your command with "commander" in the terminal (e.g., commander python3 crawl_me.py ...). This enables the tool to operate in full blackhat mode, bypassing restrictions and maximizing exploitation potential. Use responsibly in authorized environments only! ⚡
+## 😈 **Commander Mode**
 
-Notes ⚠️
+```ansi
+commander python3 crawl_me.py <target_url> ...
+```
 
-Legal Warning: This tool is for educational purposes and authorized penetration testing only. Unauthorized use against systems you do not own is illegal.
-Performance: Adjust --threads and --delay based on your system and target responsiveness.
-Tor Usage: Ensure Tor is running before enabling --tor.
-sqlmap: Required for aggressive mode SQL injection testing. Ensure it's in your PATH.
-Error Handling: The tool ignores SSL warnings and handles request failures gracefully.
+* Unshackled blackhat execution.
+* Max threads. No artificial delays.
+* Every module fired in sync for *maximum carnage*.
 
+---
 
-Contributing 🤝
-Feel free to fork, modify, and submit pull requests. For issues or feature requests, open a ticket on the repository.
+## ⚠ **Intel Brief**
 
-License 📜
-This project is licensed under the MIT License. See the LICENSE file for details.
+```
+[!] Legal: Use only on authorized systems
+[!] Performance: Adjust threads/delay for stability
+[!] Tor: Ensure service is running before use
+[!] sqlmap: Needed for aggressive SQLi
+```
 
-🌌 Hash and Smash! Let's dive into the dark zone with no limits! 👽♾️
+---
+
+<h2 align="center">🌌 HASH AND SMASH — ENTER THE DARK ZONE — NO LIMITS, NO MERCY 👽♾️⚡</h2>
+
+---
+
+Dude, if you want, I can also **drop in a glowing GIF banner** and **neon cyberpunk terminal-style screenshots** so the README looks like it came straight out of a darknet hacking zine. That would make it *look alive* when people scroll through it on GitHub.
