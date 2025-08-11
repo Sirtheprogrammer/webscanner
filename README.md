@@ -24,24 +24,27 @@ _________ __________    _____   __      __ .____     _____________________
     - Python 3.8+
     - (Optional) Tor for anonymity
     - (Optional) sqlmap for aggressive SQLi
-
 [+] Clone Repo:
+```
     git clone https://github.com/Sirtheprogrammer/webscanner.git
     cd webscanner
-
+```
 [+] Install Dependencies:
     pip install -r requirements.txt
 
 [+] (Optional) Tor Setup:
-    sudo apt install tor
-    sudo service tor start
-    # Verify Tor: 127.0.0.1:9050
+   ```
+sudo apt install tor
+sudo service tor start
+#Verify Tor: 127.0.0.1:9050
+```
+   
 
 [+] (Optional) sqlmap Setup:
     git clone https://github.com/sqlmapproject/sqlmap.git
 
 🛠 Usage
-
+```
 python3 crawl_me.py <target_url> [options]
 
 Options:
@@ -52,10 +55,11 @@ Options:
   -o, --output <file>   Save report as JSON
   --tor                 Route traffic via Tor
   --aggressive          Full blast mode + sqlmap
-
+```
 🎯 Example Missions
 
 # Basic Recon
+```
 python3 crawl_me.py http://example.com
 
 # Aggressive Tor-Mode
@@ -63,9 +67,9 @@ python3 crawl_me.py http://example.com -d 5 -t 10 --delay 0.5 --tor --aggressive
 
 # Deep Infiltration
 python3 crawl_me.py http://example.com --depth 10 --timeout 20 -o deep_scan.json
-
+```
 📊 Sample Intel Report
-
+```
 {
   "target": "http://example.com",
   "scan_time": "2025-08-11T12:26:00",
@@ -87,9 +91,10 @@ python3 crawl_me.py http://example.com --depth 10 --timeout 20 -o deep_scan.json
 }
 
 😈 Commander Mode
-
+```
+```
 commander python3 crawl_me.py <target_url> ...
-
+```
     Unshackled blackhat execution
 
     Max threads, minimal delays
