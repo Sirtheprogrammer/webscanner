@@ -26,7 +26,7 @@ _________ __________    _____   __      __ .____     _____________________
     - (Optional) sqlmap for aggressive SQLi
 
 [+] Clone Repo:
-    git clone git@github.com:Sirtheprogrammer/webscanner.git
+    git clone https://github.com/Sirtheprogrammer/webscanner.git
     cd webscanner
 
 [+] Install Dependencies:
